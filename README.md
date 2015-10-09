@@ -8,6 +8,7 @@ To add the bindings in your project, you have to do the following:
 
 1. Open robovm.xml and add the following lines:
 
+```
 <libs>
   <lib>z</lib>
 </libs>
@@ -21,6 +22,7 @@ To add the bindings in your project, you have to do the following:
   <framework>AdSupport</framework>
   <framework>StoreKit</framework>
 </weakFrameworks>
+```
 
 2. Put the AdBuddiz framework into the libs folder
 
@@ -28,10 +30,14 @@ To add the bindings in your project, you have to do the following:
 
 4. Add the following to didBecomeActive:
 
+```
 AdBuddiz.setPublisherKey(new NSString("your_publisher_key"));
 AdBuddiz.cacheAds();
+```
 
 5. Call this when you want to show the ads:
 
+```
 AdBuddiz.showAd();
+```
 
